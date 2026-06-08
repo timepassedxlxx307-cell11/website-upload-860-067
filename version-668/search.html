@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="站内影片搜索，快速查找国产影视免费高清在线资源。">
+<meta name="keywords" content="影片搜索,国产影视免费高清在线 - 最新热播大片观看站-影视排行榜,国产,视频,免费,在线观看,高清,影视大全">
+<meta name="renderer" content="webkit">
+<title>影片搜索-国产影视免费高清在线 - 最新热播大片观看站-影视排行榜</title>
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="logo" href="./index.html" aria-label="国产影视在线">
+            <span class="logo-mark">影</span>
+            <span class="logo-text">国产影视在线</span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+                <a class="nav-link " href="./index.html">首页</a>
+                <a class="nav-link " href="./categories.html">分类</a>
+                <a class="nav-link " href="./ranking.html">排行榜</a>
+        </nav>
+        <form class="header-search" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+        <button class="mobile-menu-button" type="button" aria-label="展开导航" data-menu-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+        <form class="mobile-search" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+        <nav class="mobile-nav" aria-label="移动端导航">
+            <a href="./index.html">首页</a>
+            <a href="./categories.html">分类</a>
+            <a href="./ranking.html">排行榜</a>
+                <a href="./category-featured-channel.html">精选频道</a>
+                <a href="./category-hot-movies.html">热播大片</a>
+                <a href="./category-domestic-video.html">国产优选</a>
+                <a href="./category-fresh-series.html">新剧连播</a>
+                <a href="./category-classic-cinema.html">经典片库</a>
+                <a href="./category-suspense-action.html">悬疑动作</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow dark">站内搜索</span>
+            <h1>搜索影片</h1>
+            <p>输入片名、地区、类型、年份或标签，快速找到想看的高清影视内容。</p>
+        </div>
+    </section>
+    <section class="container search-page">
+        <form class="search-large" action="./search.html" method="get">
+            <input id="search-input" type="search" name="q" placeholder="搜索影片..." aria-label="搜索影片">
+            <button type="submit">搜索</button>
+        </form>
+        <div class="movie-grid category-grid" id="search-results"></div>
+        <div class="empty-state" id="search-empty">输入关键词开始搜索</div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <a class="footer-logo" href="./index.html">
+                <span class="logo-mark">影</span>
+                <span>国产影视在线</span>
+            </a>
+            <p>国产影视免费高清在线观看站，聚焦最新热播大片，同时提供丰富的电视剧资源，内容全面更新及时，致力于打造优质的国产影视观看平台。</p>
+        </div>
+        <div class="footer-column">
+            <h3>频道导航</h3>
+            <ul>
+                    <li><a href="./category-featured-channel.html">精选频道</a></li>
+                    <li><a href="./category-hot-movies.html">热播大片</a></li>
+                    <li><a href="./category-domestic-video.html">国产优选</a></li>
+                    <li><a href="./category-fresh-series.html">新剧连播</a></li>
+                    <li><a href="./category-classic-cinema.html">经典片库</a></li>
+                    <li><a href="./category-suspense-action.html">悬疑动作</a></li>
+                    <li><a href="./category-romance-comedy.html">爱情喜剧</a></li>
+                    <li><a href="./category-sci-fi-fantasy.html">科幻奇幻</a></li>
+                    <li><a href="./category-history-war.html">历史战争</a></li>
+                    <li><a href="./category-animation-documentary.html">动漫纪录</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>站内入口</h3>
+            <ul>
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./categories.html">分类总览</a></li>
+                <li><a href="./ranking.html">影视排行榜</a></li>
+                <li><a href="./search.html">影片搜索</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">© 国产影视在线 · 高清影视内容推荐</div>
+</footer>
+<script src="./assets/search-index.js"></script>
+<script src="./assets/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
